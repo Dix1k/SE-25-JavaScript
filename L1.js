@@ -19,7 +19,7 @@ const runExperiment = (N) => {
 };
 
 // Примеры запусков:
-[100, 10_000, 1_000_000].forEach(N => {
+[10**2, 10**4, 10**6].forEach(N => {
   const result = runExperiment(N);
   console.log(`\nЗапусков: ${result.N}`);
   console.log("Ожидание на число:", result.expected);
