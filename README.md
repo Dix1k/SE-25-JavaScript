@@ -23,8 +23,16 @@
 
 ## 🛠️ Технологический стек
 
+<div align="center">
+
+[![My Skills](https://skillicons.dev/icons?i=js,nodejs,express,sqlite,ejs,git&theme=light)](https://skillicons.dev)
+
+</div>
+
 *   **Язык:** JavaScript (ES6+)
-*   **Среда выполнения:** Node.js
+*   **Бэкенд:** Node.js, Express.js
+*   **Базы данных:** SQLite
+*   **Шаблонизаторы:** EJS
 *   **Инструменты:** Git
 
 ## 📊 Статус репозитория
