@@ -35,31 +35,6 @@
 *   **Шаблонизаторы:** EJS
 *   **Инструменты:** Git
 
-## 📊 Статистика репозитория
-
-<div align="center">
-  <br>
-  <img src="https://img.shields.io/github/languages/top/Dix1k/SE-25-JavaScript?color=4F9DFF&style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
-  <img src="https://img.shields.io/github/languages/count/Dix1k/SE-25-JavaScript?color=4F9DFF&style=for-the-badge" />
-  <img src="https://img.shields.io/github/last-commit/Dix1k/SE-25-JavaScript?color=4F9DFF&style=for-the-badge&logo=github" />
-  <br>
-  <img src="https://img.shields.io/github/repo-size/Dix1k/SE-25-JavaScript?color=4F9DFF&style=for-the-badge&logo=files" />
-  <img src="https://img.shields.io/github/commit-activity/m/Dix1k/SE-25-JavaScript?color=4F9DFF&style=for-the-badge&logo=clockify" />
-  <img src="https://img.shields.io/github/directory-file-count/Dix1k/SE-25-JavaScript?color=4F9DFF&style=for-the-badge&logo=files" />
-  <br>
-  <br>
-  
-  [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Dix1k&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D&background=0D1117&ring=4F9DFF&fire=4F9DFF&currStreakLabel=4F9DFF)](https://git.io/streak-stats)
-  
-  <br>
-  
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dix1k&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=4F9DFF&text_color=FFFFFF&icon_color=4F9DFF&langs_count=8&card_width=400" />
-  
-  <br>
-  <br>
-  
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Dix1k&custom_title=Contribution%20Graph&bg_color=0D1117&color=4F9DFF&line=4F9DFF&point=FFFFFF&area=true&area_color=4F9DFF&hide_border=true" width="100%" />
-</div>
 
 ## 🚀 Быстрый старт
 
