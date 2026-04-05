@@ -119,11 +119,8 @@ class Library {
 	}
 
 	findBook(isbn) {
-		let book = this.#books.find(b => b.isbn === isbn)
-		if (!book) return console.log('❌ Не найдена')
-
-		console.log(book)
-	}
+	return this.#books.find(b => b.isbn === isbn)
+}
 
 	issueBook(cardNumber, isbn) {
 		try {
@@ -180,7 +177,7 @@ class Library {
 	}
 
 	getBooks() {
-		console.table(this.#books)
+		return this.#books
 	}
 
 	addUser(firstName, lastName, cardNumber) {
@@ -235,50 +232,54 @@ class Library {
 			console.log('📭 Нет зарегистрированных пользователей')
 			return
 		}
-		console.table(this.#users)
+		return this.#users
 	}
 }
 
-const library = new Library()
-const [, , command, ...args] = process.argv
+if (require.main === module) {
+	const library = new Library()
+	const [, , command, ...args] = process.argv
 
-switch (command) {
-	case 'addBook':
-		library.addBook(args[0], args[1], args[2], Number(args[3]))
-		break
+	switch (command) {
+		case 'addBook':
+			library.addBook(args[0], args[1], args[2], Number(args[3]))
+			break
 
-	case 'delBook':
-		library.delBook(args[0])
-		break
+		case 'delBook':
+			library.delBook(args[0])
+			break
 
-	case 'findBook':
-		library.findBook(args[0])
-		break
+		case 'findBook':
+			library.findBook(args[0])
+			break
 
-	case 'issueBook':
-		library.issueBook(args[0], args[1])
-		break
+		case 'issueBook':
+			library.issueBook(args[0], args[1])
+			break
 
-	case 'returnBook':
-		library.returnBook(args[0], args[1])
-		break
+		case 'returnBook':
+			library.returnBook(args[0], args[1])
+			break
 
-	case 'getBooks':
-		library.getBooks()
-		break
+		case 'getBooks':
+			library.getBooks()
+			break
 
-	case 'addUser':
-		library.addUser(args[0], args[1], args[2])
-		break
+		case 'addUser':
+			library.addUser(args[0], args[1], args[2])
+			break
 
-	case 'delUser':
-		library.delUser(args[0])
-		break
+		case 'delUser':
+			library.delUser(args[0])
+			break
 
-	case 'getUsers':
-		library.getUsers()
-		break
+		case 'getUsers':
+			library.getUsers()
+			break
 
-	default:
-		console.log('❓ Неизвестная команда')
+		default:
+			console.log('❓ Неизвестная команда')
+	}
 }
+
+module.exports = Library;
