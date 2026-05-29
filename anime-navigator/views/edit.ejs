@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<h2>Редактировать аниме</h2>
+
+<form action="/edit/<%= anime.id %>" method="POST" enctype="multipart/form-data">
+    <label>Название: <input type="text" name="title" value="<%= anime.title %>" required></label><br>
+    <label>Жанр: <input type="text" name="genre" value="<%= anime.genre %>" required></label><br>
+    <label>Кол-во серий: <input type="number" name="episodes" value="<%= anime.episodes %>"></label><br>
+    <label>Год выпуска: <input type="number" name="year" value="<%= anime.year %>"></label><br>
+    <label>Рейтинг: <input type="number" step="0.1" name="rating" value="<%= anime.rating %>"></label><br>
+    <label>Студия: <input type="text" name="studio" value="<%= anime.studio %>"></label><br>
+    
+    <% if (anime.image) { %>
+        <div>Текущее изображение: <img src="<%= anime.image %>" width="80"></div>
+    <% } %>
+    <label>Новое изображение: <input type="file" name="image" accept="image/*"></label><br>
+    
+    <button type="submit">Сохранить</button>
+    <a href="/">Отмена</a>
+</form>
+
+<%- include('partials/footer') %>

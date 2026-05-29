@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<h2>Добавить новое аниме</h2>
+
+<form action="/add" method="POST" enctype="multipart/form-data">
+    <label>Название: <input type="text" name="title" required></label><br>
+    <label>Жанр: <input type="text" name="genre" required></label><br>
+    <label>Кол-во серий: <input type="number" name="episodes"></label><br>
+    <label>Год выпуска: <input type="number" name="year"></label><br>
+    <label>Рейтинг (0-10): <input type="number" step="0.1" name="rating"></label><br>
+    <label>Студия: <input type="text" name="studio"></label><br>
+    <label>Изображение: <input type="file" name="image" accept="image/*"></label><br>
+    <button type="submit">Добавить</button>
+</form>
+
+<%- include('partials/footer') %>
